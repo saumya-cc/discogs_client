@@ -3,8 +3,8 @@ import sys
 
 from six import with_metaclass
 
-from discogs_client.exceptions import HTTPError
-from discogs_client.utils import parse_timestamp, update_qs, omit_none
+from discogs_client_cloudcar.exceptions import HTTPError
+from discogs_client_cloudcar.utils import parse_timestamp, update_qs, omit_none
 
 
 class SimpleFieldDescriptor(object):
@@ -480,6 +480,7 @@ class Release(PrimaryAPIObject):
     credits = ListField('Artist', key='extraartists')
     labels = ListField('Label')
     companies = ListField('Label')
+    community = SimpleField()
 
     def __init__(self, client, dict_):
         super(Release, self).__init__(client, dict_)

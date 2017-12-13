@@ -1,9 +1,9 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
 
 import unittest
-from discogs_client import Client
-from discogs_client.tests import DiscogsClientTestCase
-from discogs_client.exceptions import ConfigurationError, HTTPError
+from discogs_client_cloudcar import Client
+from discogs_client_cloudcar.tests import DiscogsClientTestCase
+from discogs_client_cloudcar.exceptions import ConfigurationError, HTTPError
 from datetime import datetime
 
 
